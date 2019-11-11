@@ -1,12 +1,11 @@
 package srot
 
 import (
-	"fmt"
 )
 
 func HeapSort(ary []int, length int) {
 	
-	for i := length/2; i > 0; i--  {
+	for i := length/2; i >= 0; i--  {
 		justHeap(ary, i, length)		
 	}
 	for i := length-1; i > 0; i-- {
