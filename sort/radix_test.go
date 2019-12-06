@@ -6,7 +6,7 @@ import(
 )
 
 func TestRadixSort(t *testing.T) {
-	arr := []int{228, 306, 444, 103,429}
+	arr := []int{228, 306, 444, 103, 429}
 
 	RadixSort(arr, 3)
 	fmt.Println(arr)
