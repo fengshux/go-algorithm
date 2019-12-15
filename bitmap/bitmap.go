@@ -36,7 +36,7 @@ func SetZero(byt uint16) {
 	index := byt/64
 	bt := byt%64
 
-	count := ^uint64(0) - powUint64(2, bt)
+	count := ^powUint64(2, bt)
 	store[index] = store[index]&count	
 
 }
